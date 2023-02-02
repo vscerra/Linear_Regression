@@ -3,7 +3,7 @@ Description and examples of linear regression/multiple linear regression impleme
 
 I used the same data set (`Linear_regression_data.txt`) across MATLAB, Python, and R to demonstrate how to implement linear regression in each language. 
 
-Regression is a supervised learning algorithm that uses known input-output pairs to predict the output for novel inputs. This is accomplished by fitting a linear model to the data and mnimizing error. Using OLS methods, the error function takes a convex shape, and a global minimum can be found through gradient descent. Alternatively, the normal equation can be used if the number of training examples is greater than the number of features and there isn't large collinearity between features. 
+Regression is a supervised learning algorithm that uses known input-output pairs to predict the output for novel inputs. This is accomplished by fitting a linear model to the data and mnimizing error. Using OLS methods, the error function takes a convex shape, and a global minimum can be found through gradient descent. Alternatively, the normal equation can be used if the number of training examples is greater than the number of features and there isn't large collinearity between features. Feature normalization is useful for speeding gradient descent, but is unncessary with the normal equation. 
 
 To use regression you need a training set of data to refine the learning algorithm which then outputs our hypothesis function (h<sub>$\theta$</sub>). The hypothesis function maps X (inputs) to y (outputs):
 
