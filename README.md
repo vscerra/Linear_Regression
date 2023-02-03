@@ -1,8 +1,10 @@
 # Linear_Regression
 Description and examples of linear regression/multiple linear regression implementation in MATLAB, Python, and R
 
-I used the same data set (`Linear_regression_data.txt`) across MATLAB, Python, and R to demonstrate how to implement linear regression in each language. 
+I used the same data set (`Linear_regression_data.txt`) across MATLAB, Python, and R to demonstrate how to implement linear regression in each language. While the Python and R scripts lean on built in functions, the MATLAB script uses vectorized cost function calculations and gradient descent to fit the model. I use a small data set of home prices to fit the model and calculate the predicted cost of a new instance to verify that each instantiation of the regression is giving the same result. 
 
+
+## Brief linear regression background
 Regression is a supervised learning algorithm that uses known input-output pairs to predict the output for novel inputs. This is accomplished by fitting a linear model to the data and mnimizing error. Using OLS methods, the error function takes a convex shape, and a global minimum can be found through gradient descent. Alternatively, the normal equation can be used if the number of training examples is greater than the number of features and there isn't large collinearity between features. Feature normalization is useful for speeding gradient descent, but is unncessary with the normal equation. 
 
 To use regression you need a training set of data to refine the learning algorithm which then outputs our hypothesis function (h<sub>$\theta$</sub>). The hypothesis function maps X (inputs) to y (outputs):
@@ -19,4 +21,3 @@ y = output or target variable
 $(x,y)$ is one input/output pair  
 $(x_i, y_i)$ is the $i^{th}$ training example  
 
-I used the same data set across MATLAB, Python, and R to demonstrate how to implement linear regression in each language. 
